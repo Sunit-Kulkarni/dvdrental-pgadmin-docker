@@ -17,7 +17,17 @@ docker-compose up
 ```bash
 http://localhost:5050
 ```
-Database, username and password: postgres
+
+1. Right click on Servers and click Create Server
+2. Name : Docker Postgres DB Server
+3. Check Connect now
+3. Hostname/address : postgres
+4. Port : 5432
+5. Maintenance database : postgres
+6. Password : postgres
+7. Check Save password
+8. Click blue save button
+9. To Run queries, right click on dvdrental under Databases under Docker Postgres DB Server, then click Query Tool
 
 
 ### Useful commands
