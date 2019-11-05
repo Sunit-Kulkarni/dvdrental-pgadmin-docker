@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+  postgres:
+    extends:
+      file: ./postgres/docker-compose.yml
+      service: master
+    container_name: postgres
+    volumes:
+      - pglog:/tmp
+      - ./postgres/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      - ./postgres/conf.d:/conf.d
+
+  pgadmin:
+    extends:
+      file: ./pgadmin/docker-compose.yml
+      service: pgadmin
+    container_name: pgadmin
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:
+  pgadmin:
+  pglog:
+
+networks:
+  esnet:
+    driver: bridge
