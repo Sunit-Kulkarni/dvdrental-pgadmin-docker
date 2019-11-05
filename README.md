@@ -13,7 +13,7 @@ Install Docker. Clone this repo to your local machine. Run docker-compose:
 docker-compose up
 ```
 
-### Open pgAdmin webinterface
+### Open pgAdmin Web Interface
 ```bash
 http://localhost:5050
 ```
