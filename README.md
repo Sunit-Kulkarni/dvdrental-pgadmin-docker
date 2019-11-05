@@ -1,8 +1,8 @@
-# docker-postgresplus
-
+# dvdrental-pgadmin-docker
 
 ## Overview
 PostgreSQL playground running on Docker with Pgadmin webinterface.
+This repo is inspired by https://github.com/rudibroekhuizen/docker-postgresplus
 
 ## Usage
 Install Docker. Clone this repo to your local machine. Run docker-compose: 
