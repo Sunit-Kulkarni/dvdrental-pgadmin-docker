@@ -3,14 +3,8 @@ version: '2'
 services:
   master:
     build: ./
-    volumes:
-      - pgdata:/pgdata
     ports:
        - "5432:5432"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - PGDATA=/pgdata
-
-volumes:
-  pgdata:

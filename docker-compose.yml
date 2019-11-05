@@ -6,10 +6,6 @@ services:
       file: ./postgres/docker-compose.yml
       service: master
     container_name: postgres
-    volumes:
-      - pglog:/tmp
-      - ./postgres/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
-      - ./postgres/conf.d:/conf.d
 
   pgadmin:
     extends:
@@ -20,9 +16,7 @@ services:
       - postgres
 
 volumes:
-  pgdata:
   pgadmin:
-  pglog:
 
 networks:
   esnet:
