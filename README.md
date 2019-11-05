@@ -2,7 +2,7 @@
 
 
 ## Overview
-PostgreSQL playground running on Docker with logs presented in Kibana dashboard and Pgadmin webinterface.
+PostgreSQL playground running on Docker with Pgadmin webinterface.
 
 ## Usage
 Install Docker. Clone this repo to your local machine. Run docker-compose: 
