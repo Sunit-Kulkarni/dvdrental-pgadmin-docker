@@ -1,7 +1,11 @@
 # dvdrental-pgadmin-docker
 
 ## Overview
-PostgreSQL playground running on Docker with Pgadmin webinterface. This repo is inspired by https://github.com/rudibroekhuizen/docker-postgresplus and https://smithjd.github.io/sqlpetr/articles/building-the-dvdrental-docker-image.html
+PostgreSQL playground running on Docker with Pgadmin webinterface. This repo is inspired by 
+
+1. https://github.com/rudibroekhuizen/docker-postgresplus 
+2. https://smithjd.github.io/sqlpetr/articles/building-the-dvdrental-docker-image.html
+3. https://github.com/tadaken3/postgres-dvdrental-database-dockerfiles
 
 ## Usage
 Install Docker. Clone this repo to your local machine. Run docker-compose: 
